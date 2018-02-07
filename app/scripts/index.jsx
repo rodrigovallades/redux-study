@@ -1,5 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import FirstComponent from './components/first-component.jsx'
+import { FirstComponent, SecondComponent } from './components/first-component'
 
-ReactDOM.render(<FirstComponent />, document.getElementById('app'))
+ReactDOM.render(
+  <div>
+    <FirstComponent />
+    <SecondComponent />
+  </div>
+, document.getElementById('app'))
