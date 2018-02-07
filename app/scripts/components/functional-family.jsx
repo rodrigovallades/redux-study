@@ -1,5 +1,5 @@
 import React from 'react'
-import { childrenWithProps } from '../utils/reactUtils'
+import { childrenWithProps } from '../utils/react-utils'
 
 export default props => (
   <div>
