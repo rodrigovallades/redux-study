@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ClassComponent from './components/class-component'
+import Field from './components/field'
 
 ReactDOM.render(
-  <ClassComponent label="Vagal" initialValue={10} />
+    <Field initialValue='Testing state link' />
 , document.getElementById('app'))
