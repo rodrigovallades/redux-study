@@ -1,7 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Field from './components/field'
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux'
+import counterReducer from './counterReducer'
+import Counter from './components/counter'
+
+const reducers = combineReducers({
+  counter: counterReducer
+})
 
 ReactDOM.render(
-    <Field initialValue='Testing state link' />
+    <Provider store={createStore(reducers)}>
+      <Counter />
+    </Provider>
 , document.getElementById('app'))
